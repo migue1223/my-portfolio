@@ -1,0 +1,90 @@
+.skills {
+  padding: 22px;
+}
+.skills-mainContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 15px;
+  max-height: 25vh;
+  overflow-y: auto;
+}
+
+.skills-mainContent::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.skills-mainContent::-webkit-scrollbar:vertical {
+  width: 10px;
+}
+
+.skills-mainContent::-webkit-scrollbar-button:increment,
+.skills-mainContent::-webkit-scrollbar-button {
+  display: none;
+}
+
+.skills-mainContent::-webkit-scrollbar:horizontal {
+  height: 10px;
+}
+
+.skills-mainContent::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 4px solid #f1f2f3;
+}
+
+.skills-mainContent::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+@media (max-width: 37.5em) {
+  .skills-mainContent {
+    display: block;
+  }
+}
+.skillBar {
+  margin-bottom: 2rem;
+  width: 46%;
+}
+@media (max-width: 37.5em) {
+  .skillBar {
+    width: 100%;
+  }
+}
+.skillBar-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.skillBar-heading p {
+  font-size: 16px;
+}
+@media (max-width: 37.5em) {
+  .skillBar-heading p {
+    font-size: 12px;
+  }
+}
+.skillBar .progress-bar {
+  background-color: #c4c4c4;
+  height: 8px;
+  border-radius: 999px;
+  position: relative;
+}
+.skillBar .progress-bar__inner {
+  position: absolute;
+  height: 100%;
+  content: "";
+  background: rgba(47, 128, 237, 0.7);
+  top: 0;
+  left: 0;
+  border-radius: 999px;
+}

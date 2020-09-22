@@ -1,0 +1,64 @@
+.pagination-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  margin-top: 25px;
+  padding: 15px;
+}
+.pagination-container .pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.pagination-container .pagination-item {
+  margin: 0 10px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+  border: 0.5px solid #5c94e1;
+  border-radius: 5px;
+}
+@media (max-width: 37.5em) {
+  .pagination-container .pagination-item {
+    padding: 5px 10px;
+    margin: 0 10px;
+    border: none;
+    margin-top: 3px;
+  }
+}
+.pagination-container .pagination-item button {
+  color: #000;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+.pagination-container .pagination-item button:focus {
+  outline: none;
+}
+.pagination-container .pagination-item--active {
+  background: #3dbaec;
+}
+@media (max-width: 37.5em) {
+  .pagination-container .pagination-item--active {
+    margin-top: 0;
+    background: #5c94e1;
+  }
+}
+.pagination-container .pagination-item--active button {
+  color: #fff;
+  font-weight: 800;
+}
