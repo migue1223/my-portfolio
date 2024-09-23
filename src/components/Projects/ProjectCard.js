@@ -12,7 +12,7 @@ const ProjectCard = ({
   certificate,
 }) => {
   return (
-    <article className="section-container projectCard">
+    <article key={id} className="section-container projectCard">
       <figure className="projectCard__image-container">
         <img src={image} alt={name} className="projectCard__image" />
       </figure>

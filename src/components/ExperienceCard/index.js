@@ -1,28 +1,32 @@
-import React from "react";
-import "./styles.css";
+import React from 'react';
+import './styles.css';
 
 const ExperienceCard = () => {
   return (
-    <div id="exp-card">
-      <h2>Experience</h2>
-      <div className="card-content">
-        <div className="work-description">
-          <p>June 2019 - currently working</p>
+    <div id='exp-card'>
+      <h2>Experiencia</h2>
+      <div className='card-content'>
+        <div className='work-description'>
+          <p>Junio 2019 - actualmente</p>
           <h3>Full Stack Web Developer</h3>
-          <p>He helped some Colombian companies improve their businesses in:</p>
+          <p>Ayudo a algunas empresas colombianas a mejorar sus negocios en:</p>
           <ul>
-            <li>Creation of websites such as CMS, Ecommerce, Payroll, Inventories ...</li>
-            <li>Maintaining existing sites and projects</li>
-            <li>Fix any existing bug</li>
-            <li>Develop backend APIs</li>
-            <li>Database administration</li>
+            <li>
+              Creación de sitios web como CMS, Ecommerce, Nóminas, Inventarios,
+              Blogs ...
+            </li>
+            <li>Mantenimiento de sitios y proyectos existentes.</li>
+            <li>Corregir errores.</li>
+            <li>Desarrollo de API Rest Full.</li>
+            <li>Administración de bases de datos.</li>
+            <li>SEO.</li>
           </ul>
-          Profile Link:{" "}
+          Profile Link:{' '}
           <b>
-            <a href="/"> </a>{" "}
+            <a href='/'> </a>{' '}
           </b>
         </div>
-        <hr className="divider" />
+        <hr className='divider' />
       </div>
     </div>
   );

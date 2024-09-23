@@ -25,12 +25,12 @@ const MyHobbies = (
         </h3>
       </a>
       <h6>Año: {ano}</h6>
-      <p>{description}</p>
-      <a href={urlCertificate} target="_blank" rel="noopener noreferrer">
+      {/* <p>{description}</p> */}
+      {/* <a href={urlCertificate} target="_blank" rel="noopener noreferrer">
         Certificate
-      </a>
-      <button onClick={onOpenModal} className="btn btn-danger">
-        Test
+      </a> */}
+      <button path={urlCertificate} onClick={onOpenModal} className="btn btn-danger">
+        Ver
       </button>
       <Modal keyExperience={idExperience} isOpen={modalIsOpen} onClose={onCloseModal} />
       <div className="divider"></div>

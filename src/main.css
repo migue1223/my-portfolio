@@ -649,10 +649,8 @@ body {
 }
 
 /* ----------------------------------------- */
-
 .main {
-  display: grid;
-  column-gap: 30px;
+  display: flex;
 }
 .filter {
   background-color: #ffffff;

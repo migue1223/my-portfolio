@@ -55,8 +55,9 @@ const Projects = () => {
             </li>
             {statistic &&
               statistic.length > 0 &&
-              statistic.map(({ category, amount }) => (
+              statistic.map(({ category, amount }, index) => (
                 <li
+                  key={index}
                   className={`projects-categories__listItem ${
                     currentCategory === categories ? "active" : ""
                   }`}
@@ -71,8 +72,8 @@ const Projects = () => {
 
       <main className="projects-main">
         {data?.length > 0 &&
-          data.map((project) => (
-            <ProjectCard key={project.id} {...project} />
+          data.map((project, index) => (
+            <ProjectCard key={index} {...project} />
           ))}
       </main>
 
